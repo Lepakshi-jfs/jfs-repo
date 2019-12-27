@@ -114,5 +114,71 @@ Meta Tags
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 •	Meta Headers
 
+# CSS
+•	What CSS is and how it works
+•	How CSS attaches to an HTML file
+1. External CSS
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  body {
+      background-color: lightblue;
+    }
+    
+    h1 {
+      color: navy;
+      margin-left: 20px;
+    }
 
+2. Internal CSS
+   <style>
+body {
+  background-color: linen;
+}
 
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+</style>
+3. Inline CSS
+   <h1 style="color:blue;text-align:center;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+•	Cascading Style Sheets/Fonts
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+p.normal {
+  font-style: normal;
+}
+
+p.italic {
+  font-style: italic;
+}
+•	Cascading Style Sheets/Background
+background-color: green;
+ background-image: url("paper.gif");
+ background-repeat: repeat-x;
+•	Cascading Style Sheets/Text
+ color: blue;
+  text-align: center;
+   text-align: justify;
+    text-decoration: overline;
+     text-decoration: line-through;
+      text-decoration: underline;
+•	Cascading Style Sheets/Classes
+.intro {
+  background-color: yellow;
+}
+•	The ‘inherit’ value
+span {
+  color: blue;
+  border: 1px solid black;
+}
+
+.extra span {
+  color: inherit;
+}
+
+<div class="extra" style="color:green">
+ <span>a span element</span> 
+</div>
