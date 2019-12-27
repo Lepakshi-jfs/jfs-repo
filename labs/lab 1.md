@@ -6,4 +6,4 @@
 5. Apply 5 aggregate functions
 
 ## html assignment link
-https://my.naukri.com/account/register/basicdetails
+https://my.naukri.com/accountgp/register/basicdetails
