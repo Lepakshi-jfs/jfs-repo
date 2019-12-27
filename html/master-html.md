@@ -80,7 +80,7 @@ Tables
 •	The th tag
 •	The caption tag
 •	Spanning multiple rows and columns
-•	The thread, tbody, and tfoot tags
+•	The thead, tbody, and tfoot tags
 •	Div Tag
 •	Span Tag
 

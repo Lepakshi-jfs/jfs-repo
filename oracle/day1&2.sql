@@ -1,3 +1,5 @@
+SELECT * FROM  EMPLOYEES;
+
 SELECT * FROM DEPARTMENTS;
 SELECT DEPARTMENT_ID, LOCATION_ID FROM DEPARTMENTS;
 SELECT SALARY , SALARY + 30 FROM EMPLOYEES;
@@ -64,5 +66,5 @@ ORDER BY JOB_ID DESC, FIRST_NAME DESC;
 
 SELECT employee_id, last_name, salary, department_id
 FROM employees
-WHERE employee_id = &EnterEmployeeID ;
+WHERE employee_id = &EnterEmployeeID;
 
