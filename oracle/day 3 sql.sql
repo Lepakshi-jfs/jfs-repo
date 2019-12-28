@@ -1,3 +1,31 @@
+create table test2(c1 char(10) primary key, c2 char(10),  c3 char(10));
+create table test3(c1 char(10) unique, c2 char(10),  c3 char(10));
+insert into test3 (c1,c2, c3) values ('d','null', 'c');
+select * from test3;
+commit;
+select * from test3;
+delete from test3;
+rollback;
+
+insert into test2 (c1,c2, c3) values ('b','null', 'c');
+select * from test2;
+insert into test2 (c1,c2, c3) values (null,'null', 'c');
+insert into test2 (c1,c2, c3) values ('null','null', 'c');
+delete from test2;
+
+
+create table test(c1 char(10), c2 char(10),  c3 char(10));
+insert into test values('a','b','c');
+insert into test (c1, c3) values ('a','c');
+
+create table test1(c1 char(10), c2 char(10) not null,  c3 char(10));
+insert into test1 (c1,c2, c3) values ('b','null', 'c');
+
+update test1 set c1 = 'changed';
+select * from test1;
+delete from test1 where c1='b';
+update test1 set c2 = 'changed' where c1='b';
+select * from test;
 SELECT commission_pct FROM EMPLOYEES;
 
 SELECT commission_pct,NVL(commission_pct,1000) FROM EMPLOYEES;
